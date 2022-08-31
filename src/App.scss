@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'IranSans';
+    src: local('IranSans'), url(./fonts/A-Iranian-Sans/FontsFree-Net-ir_sans.ttf) format('truetype');
+  }
+  
+body{
+
+text-align: right;
+font-family: "IranSans";
+}
+.App{
+    background-color: #e8e8e8;
+    font-family: "IranSans";
+
+}
+.css-x40i79{
+img{
+  object-fit: contain;
+  background-color: #e8e8e8;
+}
+}
+.active{
+  top: 0px;
+  transition: 0.3s linear;
+  background-color: #FFFFFF;
+  z-index: 40;
+  /* padding: 0 7%; */
+}
+.hidden{
+  top: -80px;
+  transition: 0.3s linear;
+
+
+}
+.checkImage{
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -o-transition: all 1s ease;
+  transition: all 1.5s ease;
+  &:hover{
+    transform: scale(1.1 );
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
