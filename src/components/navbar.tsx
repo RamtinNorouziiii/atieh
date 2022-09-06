@@ -29,7 +29,6 @@ import { useEffect, useState } from 'react';
 
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
-  
 
 
 
