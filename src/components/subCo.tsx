@@ -23,9 +23,11 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
     <Stack
+
     zIndex={10000}
     display={{base:"none",md:"block"}}
-      bg={useColorModeValue('white', 'gray.800')}
+     // bg={useColorModeValue('white', 'gray.800')}
+     backgroundColor="#efd9b0"
       boxShadow={'lg'}
       p={"12px"}
       rounded={'xl'}
