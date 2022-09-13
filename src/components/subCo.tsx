@@ -95,7 +95,7 @@ const TestimonialAvatar = ({
   );
 };
 
-export function SubCo() {
+export function SubCo({alias}:any) {
   //<FaPlane style={{ display: "inline-block", marginLeft: "10px", verticalAlign: "middle" }} />
   return (
     <Box bg="#e8e8e8">

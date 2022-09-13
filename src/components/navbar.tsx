@@ -74,7 +74,6 @@ import { useEffect, useState } from 'react';
 
 
 
-console.log(show)
     return (
       <Box
       className={`active ${show && 'hidden'}`}

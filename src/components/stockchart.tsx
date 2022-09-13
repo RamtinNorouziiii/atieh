@@ -2,7 +2,7 @@ import { Box, Flex, List, ListIcon, ListItem, Text } from "@chakra-ui/react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
 import { MdCheckCircle, MdSettings } from "react-icons/md";
-export const StockChart = () => {
+export const StockChart = ({stock}:any) => {
   ChartJS.register(ArcElement, Tooltip, Legend);
   const data = {
     labels: [

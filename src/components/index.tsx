@@ -1,23 +1,35 @@
-import { Text } from "@chakra-ui/react"
-import FooterComp from "./footer"
-import { MissionComp } from "./mission"
-import WithSubnavigation from "./navbar"
-import { News } from "./news"
-import { StarterBanner } from "./starterBanner"
-import { StockChart } from "./stockchart"
-import { SubCo } from "./subCo"
+import { Text } from "@chakra-ui/react";
+import axios from "axios";
+import { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { DataReqAction } from "../redux/actions/data";
+import { MissionComp } from "./mission";
+import { News } from "./news";
+import { StarterBanner } from "./starterBanner";
+import { StockChart } from "./stockchart";
+import { SubCo } from "./subCo";
 
 export const Components = () => {
-    return (
-        <>
-            <StarterBanner />
-           
-            <News />
-            <SubCo />
-            
-            <StockChart />
-            <MissionComp />
-            
-        </>
-    )
-}
+  const dispatch = useDispatch();
+  //@ts-ignore
+  const data:any = useSelector((state) => state);
+  const fetchData = () => {
+    dispatch(DataReqAction());
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+  console.log("DATA_SELECTOR", data);
+  return (
+    <>
+      <StarterBanner banner={data.banner} />
+
+      <News news={data.news} />
+      <SubCo alias={data.alias} />
+
+      <StockChart stock={data.stock} />
+      <MissionComp />
+    </>
+  );
+};

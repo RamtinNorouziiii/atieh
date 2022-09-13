@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Lazy} from "swiper";
 import { Box, Image,Text } from "@chakra-ui/react";
 
-export const News = ()=>{
+export const News = ({news}:any)=>{
     return(
         <Box borderRadius="28px" bgGradient='linear(to-t, #d9d9d9, #e8e8e8)'  m={"20px auto "}>
          <Text id="news" my={"60px"}  fontSize={25} textAlign="center" >
