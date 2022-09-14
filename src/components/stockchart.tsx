@@ -4,36 +4,6 @@ import { Doughnut } from "react-chartjs-2";
 import { MdCheckCircle, MdSettings } from "react-icons/md";
 export const StockChart = ({stock}:any) => {
   ChartJS.register(ArcElement, Tooltip, Legend);
-  const data = {
-    labels: [
-      "صرافی ملت",
-      "ساختمانی بانک ملت",
-      "واسپاری ملت",
-      "کارگزاری بانک ملت",
-      "تامین سرمایه ملت",
-    ],
-    datasets: [
-      {
-        label: "# of Votes",
-        data: [10, 10, 10, 10, 5],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-        ],
-        borderWidth: 3,
-      },
-    ],
-  };
   return (
     <Box>
       <Box
@@ -73,25 +43,18 @@ export const StockChart = ({stock}:any) => {
             {" "}
             <img src="/assets/seke.png" alt="pic" />
           </Box>
-          <Box w={{md:"50%",base:"100%"}} >
-          <List my={"25%"}  alignItems="center" justifyContent="center" h={"300px"}  textAlign={"center"}   spacing={10}>
-            <ListItem fontSize="20" textColor="#d77a61" >
+          <Box  w={{md:"50%",base:"100%"}} >
+          <List my={"25%"}  alignItems="center" justifyContent="center"   textAlign={"center"}   spacing={10}>
+          {
+            stock && stock.data.map((res:any,index:any)=>{
+              return(
+                <ListItem fontSize="20" textColor="#d77a61" key={index} >
             
-          <Text display="inline-block" color="black" >10%</Text> :صرافی ملت  
-            </ListItem>
-            <ListItem fontSize="20" textColor="#d77a61" >
-            <Text display="inline-block" color="black" >10%</Text> :ساختمانی بانک ملت 
-            </ListItem>
-            <ListItem fontSize="20" textColor="#d77a61">
-            <Text display="inline-block" color="black" >10%</Text> :واسپاری ملت 
-            </ListItem>
-           
-            <ListItem fontSize="20" textColor="#d77a61">
-            <Text display="inline-block" color="black" >10%</Text> :کارگزاری بانک ملت  
-            </ListItem>
-            <ListItem fontSize="20" textColor="#d77a61">
-            <Text display="inline-block" color="black" >10%</Text> :تامین سرمایه ملت 
-            </ListItem>
+                <Text display="inline-block" color="black" >{res.percent}%</Text> {res.title} 
+                  </ListItem>
+              )
+            })
+          }
           </List>
           </Box>
         </Flex>

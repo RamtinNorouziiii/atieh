@@ -111,179 +111,15 @@ export function SubCo({alias}:any) {
        بکار گرفته و از این طریق در جهت حداکثر کردن ثروت سهامداران اهتمام ورزد</Text>
         </Stack>
         <Stack
-          direction={{ md: 'row' }}
-        
-        >
-          <Swiper 
-            modules={[Pagination, Lazy, Autoplay]}
-          dir={"rtl"}
-            autoplay={{
-              delay:2500,
-              pauseOnMouseEnter: true,
-              disableOnInteraction: false,
-              
-              
-            }}
-           loop={true}
-           
-            breakpoints={{
-              200: {
-                slidesPerView: 1,
-              },
-
-              370: {
-                slidesPerView: 2.3,
-              },
-              850: {
-                slidesPerView: 3.3,
-              },
-
-              1000: {
-                slidesPerView: 4.3,
-              },
-              2000: {
-                slidesPerView: 4.3,
-              }
-            }}
-            slidesPerView= {4.3}
-   
-            lazy={{
-              enabled: true,
-              loadPrevNext: false,
-              loadOnTransitionStart: true,
-            }}
-       
-            preloadImages={false}
-          >
-            <SwiperSlide   >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  گروه مشاوره مدیریت IT آوین </Text>
-                    <TestimonialText  >
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.avintech.net/"
-                    src={
-                      './assets/avin.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  معین گردشگری ملت</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.mellattravel.com/"
-                    src={
-                      './assets/gardesh.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} > واسپاری (لیزینگ) آتی نگر افام</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://atinegarafam.ir/"
-                    src={
-                      './assets/lizing.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} > نیرو تامین آتیه خواهان</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/niroo.html"
-                    src={
-                      ''
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  گروه تجارت بین الملل آتیه</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/tejarat.html"
-                    src={
-                      './assets/bussiness.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  خدمات بیمه ای آتیه نگرما</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/bime.html"
-                    src={
-                      './assets/insurance.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-          </Swiper>
-        </Stack>
-        <Stack
-         display={{base:"none",md:"block"}}
+         display="bolck"
           direction={{ md: 'row' }}
         >
           <Swiper
             modules={[Pagination, Lazy, Autoplay]}
-          
+          dir="rtl"
             autoplay={{
-              delay:2500,
-              pauseOnMouseEnter: true,
+              delay:5000,
+              pauseOnMouseEnter: false,
               disableOnInteraction: false,
              
               
@@ -320,123 +156,105 @@ export function SubCo({alias}:any) {
        
             preloadImages={false}
           >
-            <SwiperSlide   >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  گروه مشاوره مدیریت IT آوین </Text>
-                    <TestimonialText >
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.avintech.net/"
-                    src={
-                      './assets/avin.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  معین گردشگری ملت</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.mellattravel.com/"
-                    src={
-                      './assets/gardesh.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
+             {
+           alias&&alias.data.map((res:any,index:any)=>{
+           
+                return(
+                  <SwiperSlide key={index}   >
+                  <Box mx={15} >
+                    <Testimonial  >
+                      <TestimonialContent>
+                        <Text   fontSize={{ base: 18, lg: 16 }} > {res.title}</Text>
+                        <TestimonialText  >
+                          {res.description}
+                                 </TestimonialText>
+                      </TestimonialContent>
+                      <TestimonialAvatar
+                        url={res.webLink}
+                        src={res &&`http://localhost:8000/api/v1/${res && res.image}`}
+                        name={''}
+                        title={''}
+                      />
+                    </Testimonial>
+                  </Box>
+                </SwiperSlide>
+    
+                )
+              })
+            }
+          </Swiper>
+        </Stack>
+        <Stack
+         display={{base:"none",md:"block"}}
+          direction={{ md: 'row' }}
+        >
+          <Swiper
+            modules={[Pagination, Lazy, Autoplay]}
+          
+            autoplay={{
+              delay:5000,
+              pauseOnMouseEnter: false,
+              disableOnInteraction: false,
+             
+              
+            }}
+          
+           loop={true}
+            onChangeDirection={()=>{}}
+            breakpoints={{
+              200: {
+                slidesPerView: 1,
+              },
 
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} > واسپاری (لیزینگ) آتی نگر افام</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://atinegarafam.ir/"
-                    src={
-                      './assets/lizing.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
+              370: {
+                slidesPerView: 1,
+              },
+              850: {
+                slidesPerView: 2,
+              },
 
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} > نیرو تامین آتیه خواهان</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/niroo.html"
-                    src={
-                      ''
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  گروه تجارت بین الملل آتیه</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/tejarat.html"
-                    src={
-                      './assets/bussiness.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide  >
-              <Box mx={15} >
-                <Testimonial  >
-                  <TestimonialContent>
-                    <Text   fontSize={{ base: 18, lg: 16 }} >  خدمات بیمه ای آتیه نگرما</Text>
-                    <TestimonialText>
-                      رکت مدیریت سرمایه آتیه خواهان به شماره ثبت 387808 مورخ 89/08/01 به عنوان بازوی اجرایی صندوق تامین آتیه کارکنان بات              </TestimonialText>
-                  </TestimonialContent>
-                  <TestimonialAvatar
-                    url="https://www.acmgroup.ir/bime.html"
-                    src={
-                      './assets/insurance.png'
-                    }
-                    name={''}
-                    title={''}
-                  />
-                </Testimonial>
-              </Box>
-            </SwiperSlide>
+              1000: {
+                slidesPerView: 4.3,
+              },
+              2000: {
+                slidesPerView: 4.3,
+              }
+            }}
+            slidesPerView= {4.3}
+   
+            lazy={{
+              enabled: true,
+              loadPrevNext: false,
+              loadOnTransitionStart: true,
+            }}
+       
+            preloadImages={false}
+          >
+             {
+           alias&&alias.data.map((res:any,index:any)=>{
+                return(
+                  <SwiperSlide key={index}   >
+                  <Box mx={15} >
+                  <Testimonial  >
+                      <TestimonialContent>
+                        <Text   fontSize={{ base: 18, lg: 16 }} > {res.title}</Text>
+                        <TestimonialText  >
+                          {res.description}
+                                 </TestimonialText>
+                      </TestimonialContent>
+                      <TestimonialAvatar
+                        url={res.webLink}
+                        src={res &&`http://localhost:8000/api/v1/${res && res.image}`}
+                        name={''}
+                        title={''}
+                      />
+                    </Testimonial>
+                  </Box>
+                </SwiperSlide>
+    
+                )
+              })
+            }
           </Swiper>
         </Stack>
       </Container>

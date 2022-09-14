@@ -4,7 +4,7 @@ import { Autoplay, Pagination, Lazy, Navigation } from "swiper";
 import {Box, Image} from "@chakra-ui/react";
 
 export const StarterBanner = ({banner}:any)=>{
-  console.log("BANEER",banner)
+  
     return(
         <Swiper
         style={{

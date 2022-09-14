@@ -10,17 +10,7 @@ import { StarterBanner } from "./starterBanner";
 import { StockChart } from "./stockchart";
 import { SubCo } from "./subCo";
 
-export const Components = () => {
-  const dispatch = useDispatch();
-  //@ts-ignore
-  const data:any = useSelector((state) => state);
-  const fetchData = () => {
-    dispatch(DataReqAction());
-  };
-  useEffect(() => {
-    fetchData();
-  }, []);
-  console.log("DATA_SELECTOR", data);
+export const Components = ({data}:any) => {
   return (
     <>
       <StarterBanner banner={data.banner} />
