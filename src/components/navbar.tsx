@@ -97,7 +97,8 @@ export default function WithSubnavigation({ data }: any) {
             color={useColorModeValue('gray.800', 'white')}
             mx={4}
           >
-            <Link href='/' ><Image src="./assets/atieh.png" /></Link>
+           
+            <Link href='/' ><Image src="/assets/atieh.png" /></Link>
           </Text>
 
           <Flex display={{ base: 'none', md: 'none', lg: "flex" }} ml={10}>
@@ -142,7 +143,6 @@ export default function WithSubnavigation({ data }: any) {
 }
 
 const DesktopNav = ({ data }: any) => {
-  console.log("DESKTOPNAV", data)
   const linkColor = useColorModeValue('gray.600', 'gray.200');
   const linkHoverColor = useColorModeValue('gray.800', 'white');
   const popoverContentBgColor = useColorModeValue('white', 'gray.800');
@@ -259,7 +259,6 @@ const MobileNav = ({ data }: any) => {
 
 const MobileNavItem = ({ label, children, href, icon, data }: any) => {
   const { isOpen, onToggle } = useDisclosure();
-  console.log("!!!!!!!!", data)
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex

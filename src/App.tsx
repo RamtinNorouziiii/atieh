@@ -9,6 +9,7 @@ import "swiper/css/scrollbar";
 import "./App.scss";
 import { Components } from "./components";
 import { AboutUs } from "./components/aboutus";
+import AliasPage from "./components/alias";
 import { ContactUs } from "./components/cotactUs";
 import FooterComp from "./components/footer";
 import JobOfferComp from "./components/joboffer";
@@ -35,9 +36,10 @@ function App() {
       <Route path="/aboutus" element={<AboutUs />} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/joboffers" element={<JobOfferComp />} />
+      <Route path="/alias/:id" element={<AliasPage data={data.alias}  />} />
 
      </Routes>
-     <FooterComp />
+     <FooterComp data={data.alias} />
      </BrowserRouter>
      
     </div>

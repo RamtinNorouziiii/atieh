@@ -16,9 +16,10 @@ export const Components = ({data}:any) => {
       <StarterBanner banner={data.banner} />
 
       <News news={data.news} />
-      <SubCo alias={data.alias} />
+      
 
       <StockChart stock={data.stock} />
+      <SubCo alias={data.alias} />
       <MissionComp />
     </>
   );
