@@ -38,20 +38,23 @@ export default function FooterComp({ data }: any) {
         >
           <Stack align={"center"}>
             <ListHeader>درباره ما</ListHeader>
+            <hr style={{color:"white",width:"50%",marginBottom:"10px"}} />
             <Link href={"#"}>تاریخچه</Link>
             <Link href={"#"}>اهداف و ماموریت</Link>
             <Link href={"/joboffers"}>فرصت های شغلی</Link>
           </Stack>
           <Stack align={"center"}>
             <ListHeader>شرکتهای تابعه</ListHeader>
+            <hr style={{color:"white",width:"100%",marginBottom:"10px"}} />
             {data &&
               data.data.map((res: any, index: any) => {
-                return <Link  key={index} href={res.webLink}>{res.title} </Link>;
+                return <Link width="100%"  key={index} href={res.webLink}>{res.title} </Link>;
               })}
           </Stack>
 
           <Stack align={"center"}>
             <ListHeader>تماس با ما</ListHeader>
+            <hr style={{color:"white",width:"50%",marginBottom:"10px"}} />
             <Link href={"#"}>
               {" "}
               021-88506155 <PhoneIcon />{" "}

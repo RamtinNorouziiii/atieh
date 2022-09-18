@@ -30,10 +30,10 @@ import { useState } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocalShipping } from "react-icons/md";
 import { Link, useParams } from "react-router-dom";
-
 export default function AliasPage({ data }: any) {
   const params = useParams();
   const [loading,setLoading]=useState(true)
+
   const SpecificData = data.data.filter(function (creature: any) {
     return creature._id === params.id;
   });

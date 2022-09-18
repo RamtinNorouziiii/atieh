@@ -2,13 +2,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Lazy } from "swiper";
 import { ReactNode } from "react";
 import {
-  FaPlane,
-  FaHandshake,
-  FaRegAddressCard,
-  FaRegMoneyBillAlt,
-} from "react-icons/fa";
-import { MdSupport } from "react-icons/md";
-import {
   Box,
   Flex,
   Heading,
@@ -20,7 +13,6 @@ import {
   Link,
   Spinner,
 } from "@chakra-ui/react";
-import { GrPersonalComputer } from "react-icons/gr";
 
 const Testimonial = ({ children }: { children: ReactNode }) => {
   return <Box>{children}</Box>;
@@ -32,7 +24,7 @@ const TestimonialContent = ({ children }: { children: ReactNode }) => {
       zIndex={10000}
     
       // bg={useColorModeValue('white', 'gray.800')}
-      backgroundColor="#efd9b0"
+      backgroundColor="#dfdbd2"
       boxShadow={"lg"}
       p={"12px"}
       rounded={"xl"}
@@ -102,10 +94,16 @@ const TestimonialAvatar = ({
 export function SubCo({ alias }: any) {
   //<FaPlane style={{ display: "inline-block", marginLeft: "10px", verticalAlign: "middle" }} />
   return (
-    <Box bg="#e8e8e8">
+    <Box  width="100%" maxW={"100%"}
+   
+    backgroundImage="url('/assets/alias.jpg')"
+      backgroundRepeat="no-repeat"
+      backgroundSize="cover"
+    backgroundAttachment="fixed"
+   opacity="0.8">
       <Container maxW={"100%"} py={16} as={Stack} spacing={12}>
         <Stack align={"center"}>
-          <Text fontSize={25} mt={13} mb={10}>
+          <Text fontSize={{base:20 , md:30}} mt={13} mb={10}>
             {" "}
             تاسیس شرکت های فرعی در حوزه های مختلف
           </Text>

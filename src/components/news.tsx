@@ -8,8 +8,16 @@ export const News = ({ news }: any) => {
   return (
    
      
-     <Box borderRadius="28px" bgGradient='linear(to-t, #d9d9d9, #e8e8e8)' m={"20px auto "}>
-    <Text id="news" my={"60px"} fontSize={25} textAlign="center" >
+     <Box borderRadius="28px" bgGradient='linear(to-t, #d9d9d9, #e8e8e8)' m={"5px auto "}
+     width="100%" maxW={"100%"}
+    
+     backgroundImage="url('/assets/news.jpg')"
+       backgroundRepeat="no-repeat"
+       backgroundSize="cover"
+     backgroundAttachment="fixed"
+     
+     >
+    <Text py={20}  id="news"  fontSize={25} textAlign="center" >
       خبرها
     </Text>
     {
